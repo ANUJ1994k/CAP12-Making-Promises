@@ -10,18 +10,20 @@ function filterArray(arr, callback) {
     }
     return filteredArray;
 }
+
+
 // defining a Callback function to check if a number is even
 function isEven(number) {
     return number % 2 === 0;
 }
-
+//defining a Callback function to check if a number is odd
 function isOdd(number){
     return number%2!==0;
 }
 
 // Use the filterArray function to filter even numbers
-const evenNumbers = filterArray(numbers, isEven);
+const evenNumbers = filterArray(numbers,isEven);
 const oddNumbers=filterArray(numbers,isOdd);
 console.log("Origianl Array:", numbers);
-console.log("filtered Even Array:",evenNumbers);
+console.log("filtered Even Array:",evenNumbers,"\n");
 console.log("Filtered Odd numbers Array:",oddNumbers);
